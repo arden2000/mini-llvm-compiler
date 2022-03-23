@@ -1,9 +1,13 @@
-To run the script for all the benchmarks: 
-    cd csc431-compiler/llvm
-    python3 benchmarkScript.py
+Compiler for the MINI language, a subset of C, that generates LLVM. 
+By default the LLVM IR created is register-based (SSA form).
 
-All the code used for the compiler is in the csc431-compiler/llvm directory
+All the code used for the compiler is in the llvm-compiler directory
 The main file to run the compiler is compiler.py
 
-Our compiler only generates llvm ir (.ll) code and stores it in the csc431-compiler/ll directory.
-To actually excuete the code, use clang on the generated .ll file.
+python3 compiler.py [ -sscp | -dce | simp | -opt | -stack ] <.mini file>
+Options: 
+-sscp : runs the sparse simple constant propogation optimization
+-dce : run the useless code elimination optimization
+-simp : runs the cfg simplification optimization 
+-opt : runs all optimizations
+-stack : stack based variable allocation
