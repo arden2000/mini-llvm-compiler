@@ -1,0 +1,73 @@
+fun main() int
+{
+   int i;
+   {
+      i = 2;
+      if (i < 3)
+      {
+         i = i + 1;
+         return 45;
+      }
+      else
+      {
+         i = 5 * i;
+         
+      }
+      return 4;
+   }
+
+}
+
+fun foo() void
+{
+   int i;
+   {
+      i = 2;
+      if (i < 1)
+      {
+         i = 2;
+         return;
+      }
+      else{
+         i = 3;
+         return;
+      }
+      
+      if (i == 2)
+      {
+         i = 4;
+         return;
+      }
+      else
+      {
+         i = i + 2;
+         return;
+      }
+   }
+}
+
+fun bar() void
+{
+   int i;
+   {
+      if (i < 2)
+      {
+         i = i + 1;
+      }
+      else 
+      {
+         i = 2;
+      }
+   }
+}
+
+fun foo2() int
+{
+   int i;
+   i = 10;
+   while (i < 20){
+      i = i + 1;
+   }
+   i = 4;
+   return 7;
+}

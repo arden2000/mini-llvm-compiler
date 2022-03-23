@@ -1,0 +1,80 @@
+struct A
+{
+   int i;
+   int j1;
+   bool b;
+   struct A a;
+};
+
+struct A globalA;
+int globalInt;
+bool globalBool;
+
+fun megaTest (int a, int b) int
+{
+    int x;
+    int y;
+    y = 2;
+    globalInt = read;
+    x = read;
+    if (x == globalInt)
+    {
+        print x;
+        x = 7;
+        return x * x;
+    }
+    else 
+    {
+        x = globalA.i;
+        print x;
+    }
+    while(y < 10)
+    {
+        print y;
+        if (y < 6)
+        {
+            print 0;
+        }
+        else 
+        {
+            print (globalInt * 100);
+            return globalA.i;
+        }
+        y = y + 1;
+    }
+    return y;
+}
+
+fun main() int 
+{
+    int i;
+    bool b;
+    struct A a;
+
+    while (i < 3)
+    {
+        i = 4;
+    }
+
+    a = new A;
+    globalA = new A;
+    globalA.i = 192;
+
+    a.i = 4;
+    print globalA.i;
+    print a.i;
+    print 100000;
+
+    i = 4;
+    if (i < 10)
+    {
+        i = globalInt * i;
+    }
+    else 
+    {
+        i = 19;
+    }
+    print i;
+    print megaTest(3, globalInt);
+    return 0;
+} 

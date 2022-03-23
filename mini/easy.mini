@@ -1,0 +1,24 @@
+struct intList {
+   int data;
+   struct intList rest;
+};
+
+fun main() int {
+    int x;
+    int y;
+    int i;
+    struct intList a;
+    x = 3;
+    x = read;
+    if (a == null)
+    {
+        y = x + 3;
+        if (x < 1) 
+        {
+            x = read;
+        }
+    }
+
+    i = i + i;
+    return i;
+}

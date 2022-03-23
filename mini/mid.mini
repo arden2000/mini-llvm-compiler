@@ -1,0 +1,109 @@
+struct A
+{
+   int i;
+   int j1;
+   bool b;
+   struct A a;
+};
+
+int g;
+int x;
+struct A s;
+struct A y;
+bool bob;
+
+fun huh(int a, int r) int{
+   int i;
+   int i1;
+   i = 3;
+   g = i;
+   while (g < 10) 
+   {
+      a = g;
+      i = a + 4;
+      a = i;
+      a = g + 5;
+      i = i + 1;
+   }
+   if (s.b){
+      i = 2;
+   }
+   while (bob) {
+      i = i + 1;
+   }
+   x = g;
+   a = 4;
+   return a;
+}
+
+fun huhstruct(int a) int{
+   int i;
+   struct A abc;
+   abc = new A;
+   s = new A;
+   s = abc.a;
+   i = 3;
+   g = i;
+   g = i;
+   abc.i = g;
+   abc.i = 7;
+   abc.i = i;
+   i = abc.i;
+   i = i + 1;
+   s.i = 4;
+   y.i = s.i;
+   s = y;
+   g = mem(s, y).i;
+   huh(x, 1);
+   huh(i, 1);
+   i = read;
+   g = read;
+   s.i = read;
+   while (i < 10) 
+   {
+      a = g;
+      i = a + 4;
+      a = i;
+      a = a + 5;
+      i = i + 1;
+   }
+   x = abc.i;
+   a = 4;
+   return a;
+}
+
+fun mem(struct A s, struct A y) struct A
+{
+   struct A x;
+   x = new A;
+   x.i = 19;
+   x = new A;
+   x.a = new A;
+   x.a.b = false;
+   delete x.a;
+   delete x;
+   return x;
+}
+
+fun main() int
+{
+   int i;
+   {
+      i = 2;
+      if (i < 3)
+      {
+         i = i + 1;
+         return 45;
+      }
+      else
+      {
+         i = 5 * i;
+         
+      }
+      i = huh(i, 1);
+      return i;
+   }
+
+}
+
+

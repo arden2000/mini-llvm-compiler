@@ -1,0 +1,9 @@
+To run the script for all the benchmarks: 
+    cd csc431-compiler/llvm
+    python3 benchmarkScript.py
+
+All the code used for the compiler is in the csc431-compiler/llvm directory
+The main file to run the compiler is compiler.py
+
+Our compiler only generates llvm ir (.ll) code and stores it in the csc431-compiler/ll directory.
+To actually excuete the code, use clang on the generated .ll file.
